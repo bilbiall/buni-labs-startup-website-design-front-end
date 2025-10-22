@@ -18,7 +18,7 @@ const services = [
     description:
       "Manage inventory, track sales, and optimize operations with our comprehensive POS and inventory management system.",
     features: ["Real-time analytics", "Multi-location support", "Cloud-based"],
-    link: "https://reones.co.ke", // Added link to SaaS platform
+    link: "https://marketplace.riangaconstructions.co.ke", // Added link to SaaS platform
   },
   {
     icon: Brain,
