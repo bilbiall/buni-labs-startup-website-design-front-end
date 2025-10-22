@@ -18,7 +18,7 @@ export default function Hero() {
         backgroundAttachment: "fixed",
       }}
     >
-      <div className="absolute inset-0 bg-black/70 -z-10"></div>
+      <div className="absolute inset-0 bg-black/85 -z-10"></div>
 
       <div className="max-w-3xl mx-auto text-center fade-in-up relative z-10">
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 leading-tight text-balance text-white">

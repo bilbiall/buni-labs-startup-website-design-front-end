@@ -1,6 +1,7 @@
 "use client"
 
 import { ShoppingCart, Zap, Brain } from "lucide-react"
+import Link from "next/link"
 
 const services = [
   {
@@ -9,6 +10,7 @@ const services = [
     description:
       "Build and launch your online store with our affordable, easy-to-use marketplace platform. Perfect for small to medium businesses.",
     features: ["Drag-and-drop builder", "Payment integration", "Mobile responsive"],
+    link: "#", // Add your marketplace link here
   },
   {
     icon: Zap,
@@ -16,6 +18,7 @@ const services = [
     description:
       "Manage inventory, track sales, and optimize operations with our comprehensive POS and inventory management system.",
     features: ["Real-time analytics", "Multi-location support", "Cloud-based"],
+    link: "https://reones.co.ke", // Added link to SaaS platform
   },
   {
     icon: Brain,
@@ -23,6 +26,7 @@ const services = [
     description:
       "Integrate intelligent AI assistants to automate customer support, boost engagement, and improve satisfaction.",
     features: ["24/7 availability", "Natural language processing", "Easy integration"],
+    link: "#", // Add your AI assistant link here
   },
 ]
 
@@ -64,9 +68,14 @@ export default function Services() {
                   ))}
                 </ul>
 
-                <button className="text-accent font-medium hover:gap-2 transition-all duration-300 inline-flex items-center gap-1">
+                <Link
+                  href={service.link}
+                  target={service.link.startsWith("http") ? "_blank" : "_self"}
+                  rel={service.link.startsWith("http") ? "noopener noreferrer" : ""}
+                  className="text-accent font-medium hover:gap-2 transition-all duration-300 inline-flex items-center gap-1"
+                >
                   Learn More →
-                </button>
+                </Link>
               </div>
             )
           })}
