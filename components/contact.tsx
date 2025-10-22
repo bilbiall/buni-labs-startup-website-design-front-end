@@ -15,7 +15,7 @@ export default function Contact() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 mb-12">
+        <div className="flex flex-col md:grid md:grid-cols-3 gap-8 mb-12">
           {[
             { icon: Mail, label: "Email", value: "hello@bunilabs.com" },
             { icon: Phone, label: "Phone", value: "+1 (555) 123-4567" },

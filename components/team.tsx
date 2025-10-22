@@ -1,10 +1,9 @@
 "use client"
 
 const team = [
-  { name: "Sarah Johnson", role: "CEO & Founder", image: "/professional-woman-headshot.png" },
-  { name: "Michael Chen", role: "CTO", image: "/professional-man-headshot.png" },
-  { name: "Emma Rodriguez", role: "Head of Design", image: "/professional-headshot-woman-designer.png" },
-  { name: "David Kim", role: "Lead Developer", image: "/professional-developer-headshot.png" },
+  { name: "Andrew Musili", role: "Lead Developer", image: "/professional-developer-headshot.png" },
+  { name: "Brian Spolo", role: "Market Lead", image: "/professional-man-headshot.png" },
+  { name: "Bill Ngare", role: "Operations", image: "/professional-headshot-woman-designer.png" },
 ]
 
 export default function Team() {
@@ -20,7 +19,7 @@ export default function Team() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-3 gap-8">
           {team.map((member, i) => (
             <div key={i} className="group text-center fade-in-up" style={{ animationDelay: `${i * 0.1}s` }}>
               <div className="relative mb-6 overflow-hidden rounded-2xl border border-border bg-muted h-64">

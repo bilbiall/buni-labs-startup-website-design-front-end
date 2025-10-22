@@ -18,7 +18,7 @@ export default function Footer() {
 
           <div>
             <h4 className="font-semibold mb-4">Product</h4>
-            <ul className="space-y-2 text-sm text-primary-foreground/70">
+            <ul className="flex flex-col space-y-2 text-sm text-primary-foreground/70">
               <li>
                 <a href="#" className="hover:text-accent transition-colors duration-300">
                   Marketplace
@@ -44,7 +44,7 @@ export default function Footer() {
 
           <div>
             <h4 className="font-semibold mb-4">Company</h4>
-            <ul className="space-y-2 text-sm text-primary-foreground/70">
+            <ul className="flex flex-col space-y-2 text-sm text-primary-foreground/70">
               <li>
                 <a href="#" className="hover:text-accent transition-colors duration-300">
                   About
@@ -95,7 +95,7 @@ export default function Footer() {
 
         <div className="border-t border-primary-foreground/10 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-primary-foreground/70">
           <p>&copy; 2025 BuniLabs. All rights reserved.</p>
-          <div className="flex gap-6 mt-4 md:mt-0">
+          <div className="flex flex-col md:flex-row gap-6 mt-4 md:mt-0">
             <a href="#" className="hover:text-accent transition-colors duration-300">
               Privacy Policy
             </a>

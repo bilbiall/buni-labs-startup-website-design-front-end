@@ -50,9 +50,14 @@ export default function Projects() {
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2">{project.title}</h3>
                 <p className="text-muted-foreground mb-4">{project.description}</p>
-                <button className="text-accent font-medium hover:gap-2 transition-all duration-300 inline-flex items-center gap-1">
+                <a
+                  href="https://marketplace.riangaconstructions.co.ke"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-accent font-medium hover:gap-2 transition-all duration-300 inline-flex items-center gap-1"
+                >
                   Learn More →
-                </button>
+                </a>
               </div>
             </div>
           ))}
