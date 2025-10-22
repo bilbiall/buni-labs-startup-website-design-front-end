@@ -3,7 +3,7 @@
 const projects = [
   {
     title: "E-Commerce Platform",
-    description: "A complete marketplace solution for retailers",
+    description: "A complete marketplace for websites",
     image: "/modern-ecommerce-interface.png",
   },
   {
