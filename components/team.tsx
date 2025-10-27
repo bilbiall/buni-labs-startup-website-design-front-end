@@ -2,7 +2,7 @@
 
 const team = [
   { name: "Andrew Musili", role: "Lead Developer", image: "/professional-developer-headshot.png" },
-  { name: "Brian Spolo", role: "Market Lead", image: "/professional-man-headshot.png" },
+  { name: "Brian Apolo", role: "Market Lead", image: "/professional-man-headshot.png" },
   { name: "Bill Ngare", role: "Operations", image: "/professional-headshot-woman-designer.png" },
 ]
 
