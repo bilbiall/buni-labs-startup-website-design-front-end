@@ -100,12 +100,7 @@ export default function Navbar({ isDark, toggleTheme }: NavbarProps) {
             >
               Services
             </button>
-            <button
-              onClick={() => scrollToSection("projects")}
-              className="block w-full text-left px-4 py-2 hover:bg-muted rounded-lg transition-colors duration-300"
-            >
-              Projects
-            </button>
+            
             <button
               onClick={() => scrollToSection("team")}
               className="block w-full text-left px-4 py-2 hover:bg-muted rounded-lg transition-colors duration-300"
