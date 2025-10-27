@@ -18,8 +18,8 @@ export default function Contact() {
         <div className="flex flex-col md:grid md:grid-cols-3 gap-8 mb-12">
           {[
             { icon: Mail, label: "Email", value: "hello@bunilabs.com" },
-            { icon: Phone, label: "Phone", value: "+1 (555) 123-4567" },
-            { icon: MapPin, label: "Location", value: "San Francisco, CA" },
+            { icon: Phone, label: "Phone", value: "+254797207125" },
+            { icon: MapPin, label: "Location", value: "Nairobi, Kenya" },
           ].map((contact, i) => {
             const Icon = contact.icon
             return (
