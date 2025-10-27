@@ -24,7 +24,7 @@ export default function Projects() {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16 fade-in-up">
           <h2 className="text-4xl sm:text-5xl font-bold mb-6 text-balance">
-            Featured <span className="text-accent">Projects</span>
+            Our <span className="text-accent">Services</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             See how our solutions are transforming businesses across industries.
