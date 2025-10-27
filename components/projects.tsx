@@ -4,18 +4,21 @@ const projects = [
   {
     title: "E-Commerce Platform",
     description: "A complete marketplace for websites",
+    features: ["Drag-and-drop builder", "Payment integration", "Mobile responsive"],
+
     image: "/modern-ecommerce-interface.png",
   },
   {
     title: "Inventory Management",
     description: "Real-time stock tracking and analytics",
-    features: ["Drag-and-drop builder", "Payment integration", "Mobile responsive"],
 
     image: "/inventory-dashboard.png",
   },
   {
     title: "AI Customer Support",
     description: "Intelligent chatbot for 24/7 support",
+    features: ["24/7 availability", "Natural language processing", "Easy integration"],
+
     image: "/ai-chatbot-interface.png",
   },
 ]
