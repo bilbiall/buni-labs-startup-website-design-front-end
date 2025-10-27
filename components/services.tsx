@@ -1,47 +1,38 @@
 "use client"
-
-import React from "react"
-import { ShoppingCart, Zap, Brain } from "lucide-react"
 import Link from "next/link"
 
 type Service = {
-  icon: React.ComponentType<React.SVGProps<SVGSVGElement>>
   title: string
   description: string
   features: string[]
+  image: string
   link: string
 }
 
 const services: Service[] = [
   {
-    icon: ShoppingCart,
-    image: "/modern-ecommerce-interface.png",
-
     title: "Website Marketplace",
     description:
       "Build and launch your online store with our affordable, easy-to-use marketplace platform. Perfect for small to medium businesses.",
     features: ["Drag-and-drop builder", "Payment integration", "Mobile responsive"],
+    image: "/modern-ecommerce-interface.png",
     link: "#",
   },
   {
-    icon: Zap,
-        image: "/modern-ecommerce-interface.png",
-
     title: "SaaS Platform",
     description:
       "Manage inventory, track sales, and optimize operations with our comprehensive POS and inventory management system.",
     features: ["Real-time analytics", "Multi-location support", "Cloud-based"],
-    link: "https://marketplace.riangaconstructions.co.ke",
+    image: "/modern-ecommerce-interface.png",
+    link: "https://www.google.com",
   },
   {
-    icon: Brain,
-        image: "/modern-ecommerce-interface.png",
-
     title: "AI Assistant",
     description:
       "Integrate intelligent AI assistants to automate customer support, boost engagement, and improve satisfaction.",
     features: ["24/7 availability", "Natural language processing", "Easy integration"],
-    link: "#",
+    image: "/modern-ecommerce-interface.png",
+    link: "https://www.google.com",
   },
 ]
 
@@ -59,21 +50,28 @@ export default function Services() {
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
-          {services.map((service, i) => {
-            const Icon = service.icon
-            const isExternal = service.link.startsWith("http")
-            return (
-              <div
-                key={service.title + i}
-                className="group p-8 rounded-2xl border border-border hover:shadow-lg transition-shadow duration-300 bg-card"
-              >
-                <div className="mb-6 inline-block p-3 rounded-lg bg-accent/10 group-hover:bg-accent/20 transition-colors duration-300">
-                  <Icon className="w-6 h-6 text-accent" aria-hidden="true" />
-                </div>
+          {services.map((service, i) => (
+            <div
+              key={service.title + i}
+              className="group rounded-2xl overflow-hidden border border-border bg-card hover:border-accent/50 transition-all duration-300 fade-in-up"
+              style={{ animationDelay: `${i * 0.1}s` }}
+            >
+              {/* Image section with hover effect */}
+              <div className="relative overflow-hidden h-64 bg-muted">
+                <img
+                  src={service.image || "/placeholder.svg"}
+                  alt={service.title}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300"></div>
+              </div>
 
-                <h3 className="text-xl font-bold mb-3">{service.title}</h3>
-                <p className="text-muted-foreground mb-6">{service.description}</p>
+              {/* Content section */}
+              <div className="p-6">
+                <h3 className="text-xl font-bold mb-2">{service.title}</h3>
+                <p className="text-muted-foreground mb-4 text-sm">{service.description}</p>
 
+                {/* Features list */}
                 <ul className="mb-6 space-y-2">
                   {service.features.map((feature, idx) => (
                     <li key={idx} className="flex items-start text-sm">
@@ -83,30 +81,31 @@ export default function Services() {
                   ))}
                 </ul>
 
+                {/* Learn More button/link */}
                 <div>
                   {service.link === "#" ? (
                     <button
                       type="button"
-                      className="inline-flex items-center px-4 py-2 rounded-md bg-accent text-white text-sm font-medium hover:opacity-95"
+                      className="text-accent font-medium hover:gap-2 transition-all duration-300 inline-flex items-center gap-1"
                       aria-label={`Learn more about ${service.title}`}
                     >
-                      Learn more
+                      Learn More →
                     </button>
                   ) : (
                     <Link
                       href={service.link}
-                      target={isExternal ? "_blank" : undefined}
-                      rel={isExternal ? "noopener noreferrer" : undefined}
-                      className="inline-flex items-center px-4 py-2 rounded-md bg-accent text-white text-sm font-medium hover:opacity-95"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-accent font-medium hover:gap-2 transition-all duration-300 inline-flex items-center gap-1"
                       aria-label={`Visit ${service.title}`}
                     >
-                      Visit
+                      Learn More →
                     </Link>
                   )}
                 </div>
               </div>
-            )
-          })}
+            </div>
+          ))}
         </div>
       </div>
     </section>
