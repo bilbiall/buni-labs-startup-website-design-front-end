@@ -1,5 +1,13 @@
 "use client"
 
+type projects = {
+  icon: React.ComponentType<React.SVGProps<SVGSVGElement>>
+  title: string
+  description: string
+  features: string[]
+  link: string
+}
+
 const projects = [
   {
     title: "E-Commerce Platform",
