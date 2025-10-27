@@ -22,7 +22,7 @@ export default function Team() {
         <div className="grid md:grid-cols-3 gap-8">
           {team.map((member, i) => (
             <div key={i} className="group text-center fade-in-up" style={{ animationDelay: `${i * 0.1}s` }}>
-             <!-- <div className="relative mb-6 overflow-hidden rounded-2xl border border-border bg-muted h-64"> -->
+              {/* <div className="relative mb-6 overflow-hidden rounded-2xl border border-border bg-muted h-64"> */}
                <div className="relative mb-6 overflow-hidden rounded-2xl border border-border bg-muted aspect-square">
  
                 <img
