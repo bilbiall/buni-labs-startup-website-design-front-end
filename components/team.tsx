@@ -3,7 +3,7 @@
 const team = [
   { name: "Andrew Musili", role: "Lead Developer", image: "/andrew.jpg" },
   { name: "Brian Apollo", role: "Marketing & Relations Officer", image: "/Apolo.jpg" },
-  { name: "Bill Ngare", role: "Operations Manager", image: "/professional-headshot-woman-designer.png" },
+  { name: "Bill Ngare", role: "Operations Manager", image: "/Lightnin' Hopkins __.jpg" },
 ]
 
 export default function Team() {
