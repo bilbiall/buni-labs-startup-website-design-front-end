@@ -9,6 +9,8 @@ const projects = [
   {
     title: "Inventory Management",
     description: "Real-time stock tracking and analytics",
+    features: ["Drag-and-drop builder", "Payment integration", "Mobile responsive"],
+
     image: "/inventory-dashboard.png",
   },
   {
