@@ -15,6 +15,8 @@ type Service = {
 const services: Service[] = [
   {
     icon: ShoppingCart,
+    image: "/modern-ecommerce-interface.png",
+
     title: "Website Marketplace",
     description:
       "Build and launch your online store with our affordable, easy-to-use marketplace platform. Perfect for small to medium businesses.",
@@ -23,6 +25,8 @@ const services: Service[] = [
   },
   {
     icon: Zap,
+        image: "/modern-ecommerce-interface.png",
+
     title: "SaaS Platform",
     description:
       "Manage inventory, track sales, and optimize operations with our comprehensive POS and inventory management system.",
@@ -31,6 +35,8 @@ const services: Service[] = [
   },
   {
     icon: Brain,
+        image: "/modern-ecommerce-interface.png",
+
     title: "AI Assistant",
     description:
       "Integrate intelligent AI assistants to automate customer support, boost engagement, and improve satisfaction.",
