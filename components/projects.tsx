@@ -1,5 +1,6 @@
-"use client"
 {/*
+"use client"
+
 type projects = {
   icon: React.ComponentType<React.SVGProps<SVGSVGElement>>
   title: string
@@ -78,4 +79,4 @@ export default function Projects() {
       </div>
     </section>
   )
-}*?}
+}*/}
