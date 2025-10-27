@@ -22,11 +22,13 @@ export default function Team() {
         <div className="grid md:grid-cols-3 gap-8">
           {team.map((member, i) => (
             <div key={i} className="group text-center fade-in-up" style={{ animationDelay: `${i * 0.1}s` }}>
-              <div className="relative mb-6 overflow-hidden rounded-2xl border border-border bg-muted h-64">
+             <!-- <div className="relative mb-6 overflow-hidden rounded-2xl border border-border bg-muted h-64"> -->
+               <div className="relative mb-6 overflow-hidden rounded-2xl border border-border bg-muted aspect-square">
+ 
                 <img
                   src={member.image || "/placeholder.svg"}
                   alt={member.name}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  className="w-full h-full object-cover group-hover:scale-90 transition-transform duration-500"
                 />
               </div>
               <h3 className="text-lg font-bold mb-1">{member.name}</h3>
