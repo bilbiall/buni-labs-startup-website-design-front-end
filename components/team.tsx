@@ -1,9 +1,9 @@
 "use client"
 
 const team = [
-  { name: "Andrew Musili", role: "Lead Developer", image: "/professional-developer-headshot.png" },
-  { name: "Brian Apolo", role: "Market Lead", image: "/professional-man-headshot.png" },
-  { name: "Bill Ngare", role: "Operations", image: "/professional-headshot-woman-designer.png" },
+  { name: "Andrew Musili", role: "Lead Developer", image: "/andrew.jpg" },
+  { name: "Brian Apollo", role: "Marketing & Relations Officer", image: "/Apolo.jpg" },
+  { name: "Bill Ngare", role: "Operations Manager", image: "/professional-headshot-woman-designer.png" },
 ]
 
 export default function Team() {
