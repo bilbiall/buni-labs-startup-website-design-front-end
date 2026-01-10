@@ -10,6 +10,7 @@ export default function Hero() {
 
   return (
     <section
+      id="hero"
       className="relative min-h-screen flex items-center justify-center pt-20 px-4 sm:px-6 lg:px-8 overflow-hidden"
       style={{
         backgroundImage: "url(/modern-business-dashboard-with-charts-and-analytic.jpg)",
@@ -17,6 +18,7 @@ export default function Hero() {
         backgroundPosition: "center",
         backgroundAttachment: "fixed",
       }}
+      aria-label="Hero section - Digital Solutions for Modern Business"
     >
       <div className="absolute inset-0 bg-black/85 -z-10"></div>
 
@@ -27,19 +29,21 @@ export default function Hero() {
 
         <p className="text-base sm:text-lg md:text-xl text-gray-200 mb-6 sm:mb-8 max-w-2xl mx-auto text-balance">
           Empower your business with affordable marketplaces, intelligent SaaS platforms, and AI-driven solutions
-          designed for growth.
+          designed for growth. Get custom websites, inventory systems, and business automation tools.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
           <button
             onClick={() => scrollToSection("contact")}
             className="px-6 sm:px-8 py-2.5 sm:py-3 bg-accent text-accent-foreground rounded-full font-medium hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 inline-flex items-center justify-center gap-2 text-sm sm:text-base"
+            aria-label="Start your journey with BuniLabs digital solutions"
           >
             Start Your Journey <ArrowRight size={18} className="hidden sm:inline" />
           </button>
           <button
             onClick={() => scrollToSection("about")}
             className="px-6 sm:px-8 py-2.5 sm:py-3 border border-white/30 text-white rounded-full font-medium hover:bg-white/10 transition-colors duration-300 text-sm sm:text-base"
+            aria-label="Learn more about BuniLabs and our services"
           >
             Learn More
           </button>
